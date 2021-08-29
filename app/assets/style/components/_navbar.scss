@@ -3,7 +3,6 @@
     visibility: hidden;
 }
 
-
 @include media-breakpoint-up(lg) {
     .position-lg-absolute {
         position: absolute;

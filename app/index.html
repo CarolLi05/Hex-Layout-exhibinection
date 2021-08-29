@@ -1,33 +1,28 @@
 ---
-title: Boostrap Index
+title: EXHIBINECTION
 layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
 
-<div class="container">
-</div>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+<div class="container-fluid bg-cover hero-section">
+  <div class="container h-100">
+    <div class="row align-items-md-center align-items-end h-100">
+      <div class="offset-md-1 col-md-11">
+        <h1 class="h2 mb-2">
+          <a href="./index.html" class="text-white fw-bolder">
+            台北當代藝術展
+          </a>
+        </h1>
+        <p class="text-white fs-5 fw-bolder mb-3">01 JUN - 31 OCT</p>
+        <div class="d-flex mb-15">
+          <button type="button" class="btn btn-lg btn-secondary me-2 hero-section-btn">購買票券</button>
+          <button type="button" class="btn btn-lg btn-outline-light hero-section-btn">詳細資訊</button>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+<%- include('./nav-scroller.html') %>
