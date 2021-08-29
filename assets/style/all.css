@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v5.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -16334,7 +16335,48 @@ fieldset:disabled .btn {
   }
 }
 
+/*  全域  */
+body {
+  overflow-x: hidden;
+  /* 確保AOS套件在RWD不會出現X軸 */
+}
+
 img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle !important;
+}
+
+ul, li {
+  list-style: none;
+  margin-right: 0;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.object-fit-cover {
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -16351,6 +16393,23 @@ img {
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+  }
+}
+
+.hero-section {
+  background-image: url("https://images.unsplash.com/photo-1506846540181-347008948fff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1186&q=80");
+  height: 480px;
+}
+
+.hero-section-btn {
+  width: 15%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 575.98px) {
+  .hero-section-btn {
+    width: 50%;
   }
 }
 
