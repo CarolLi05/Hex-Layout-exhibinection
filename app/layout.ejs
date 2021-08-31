@@ -15,44 +15,112 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light border border-dark bg-white" style="z-index:1090;">
-    <div class="container-fluid">
-      <!-- 漢堡選單 -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- logo -->
-      <a class="navbar-brand text-primary position-lg-absolute top-50 start-50 translate-lg-middle" href="./index.html">EXHIBINECTION</a>
-      <!-- icon -->
-      <a href="#" class="nav-link position-relative link-black order-lg-3" data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-        <span class="material-icons">
-          confirmation_number
-        </span>
-        <span class="position-absolute translate-middle rounded-circle bg-secondary text-white px-2">
-          3
-        </span>
-      </a>
-      <!-- 折疊 -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mb-2 mb-lg-0 w-100 d-flex justify-content-md-end">
-          <li class="nav-item">
-            <a class="nav-link me-9" aria-current="page" href="#">Sign in</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link me-2" href="#">Sign up</a>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light border border-dark bg-white py-8" style="z-index:1090;">
+      <div class="container">
+        <!-- 漢堡選單 -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- logo -->
+        <a class="navbar-brand text-primary position-lg-absolute top-50 start-50 translate-lg-middle py-0" href="./index.html">EXHIBINECTION</a>
+        <!-- icon -->
+        <a href="#" class="nav-link position-relative link-black order-lg-3" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          <span class="material-icons">
+            confirmation_number
+          </span>
+          <span class="position-absolute translate-middle rounded-circle bg-secondary text-white px-2">
+            3
+          </span>
+        </a>
+        <!-- 折疊 -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 w-100 d-flex justify-content-md-end">
+            <li class="nav-item">
+              <a class="nav-link me-9" aria-current="page" href="#">Sign in</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-2" href="#">Sign up</a>
+            </li>
+          </ul>
 
+        </div>
+      </div>
+    </nav>
+
+    <div <% if(current !== 'index') { %> class="d-none" <% } %>>
+      <div class="container-fluid bg-cover hero-section">
+        <div class="container h-100">
+          <div class="row align-items-md-center align-items-end h-100">
+            <div class="offset-md-1 col-lg-4">
+              <h1 class="h2 text-white fw-bolder mb-2">
+                  台北當代藝術展
+              </h1>
+              <p class="text-white fw-bolder fs-5 mb-6">01 JUN - 31 OCT</p>
+              <div class="d-flex mb-15 mb-md-0">
+                <a href="#" class="btn btn-secondary w-50 w-md-auto me-2 hero-section-btn">購買票券</a>
+                <a href="#" class="btn btn-outline-light w-50 w-md-auto hero-section-btn">詳細資訊</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
+
+    <div class="nav-scroller">
+      <ul class="nav flex-nowrap justify-content-start justify-content-md-center border-bottom py-3 overflow-x-auto overflow-y-hidden sub-nav">
+        <li class="nav-item py-2 px-6 me-7">
+          <a class="nav-link link-dark text-nowrap p-0 active" aria-current="page" href="#">音樂</a>
+        </li>
+        <li class="nav-item py-2 px-6 me-7">
+          <a class="nav-link link-dark text-nowrap p-0" href="#">戲劇</a>
+        </li>
+        <li class="nav-item py-2 px-6 me-7">
+          <a class="nav-link link-dark text-nowrap p-0" href="#">設計</a>
+        </li>
+        <li class="nav-item py-2 px-6 me-7">
+          <a class="nav-link link-dark text-nowrap p-0" href="#">藝術</a>
+        </li>
+        <li class="nav-item py-2 px-6 me-7">
+          <a class="nav-link link-dark text-nowrap p-0" href="#">美食</a>
+        </li>
+        <li class="nav-item py-2 px-6 me-7">
+          <a class="nav-link link-dark text-nowrap p-0" href="#">旅遊</a>
+        </li>
+        <li class="nav-item py-2 px-6 me-7">
+          <a class="nav-link link-dark text-nowrap p-0" href="#">電影</a>
+        </li>
+        <li class="nav-item py-2 px-6 me-7">
+          <a class="nav-link link-dark text-nowrap p-0" href="#">親子</a>
+        </li>
+        <li class="nav-item py-2 px-6">
+          <a class="nav-link link-dark text-nowrap p-0" href="#">期間限定</a>
+        </li>
+      </ul>
+    </div>
 
     <%- contents %>
 
-    <footer class="footer">
-      footer
+    <div class="jumbotron">
+      <div class="container">
+        <h3 class="text-white fw-bold mb-md-4">想收到展覽的最新消息嗎？<br />快訂閱我們！</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="輸入您的電子信箱" aria-describedby="button-addon" />
+              <button class="btn btn-secondary p-4" type="button" id="button-addon">訂閱</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer bg-white py-6 py-md-10">
+      <div class="container">
+        <h3 class="d-md-inline-block fw-normal me-md-2">EXHIBINECTION</h3>
+        <p class="d-md-inline-block mb-0">© 2020. All Rights Reserved.</p>
+      </div>
     </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
