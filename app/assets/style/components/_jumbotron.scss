@@ -1,0 +1,13 @@
+
+.jumbotron{
+    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg?raw=true');
+    height: 400px;
+}
+
+.cta-action{
+    margin-bottom: 36px;
+    &-btn{
+        padding-left: 52px;
+        padding-right: 52px;
+    }
+}
