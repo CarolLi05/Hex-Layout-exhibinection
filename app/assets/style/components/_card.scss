@@ -1,0 +1,10 @@
+
+.exhibitions{
+    .card-img-section{
+        width: 350px;
+        height: 350px;
+        @include media-breakpoint-down(md) {
+            width: 345px;
+        }
+    }
+}
