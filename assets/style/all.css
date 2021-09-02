@@ -16446,4 +16446,29 @@ p {
   padding-bottom: 10px;
 }
 
+.jumbotron {
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg?raw=true");
+  height: 400px;
+}
+
+.cta-action {
+  margin-bottom: 36px;
+}
+
+.cta-action-btn {
+  padding-left: 52px;
+  padding-right: 52px;
+}
+
+.exhibitions .card-img-section {
+  width: 350px;
+  height: 350px;
+}
+
+@media (max-width: 767.98px) {
+  .exhibitions .card-img-section {
+    width: 345px;
+  }
+}
+
 /*# sourceMappingURL=all.css.map */
