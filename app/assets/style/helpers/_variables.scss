@@ -83,7 +83,8 @@ $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $light-gray !default;
-$dark:          $dark-gray !default;
+$dark:          $gray-900 !default;
+$dark-gray:     $dark-gray !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -95,7 +96,8 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "dark-gray":  $dark-gray
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -462,11 +464,11 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default; //2.5:40px
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
+$h1-font-size:                $font-size-base * 2 !default; //2.5: 40px
+$h2-font-size:                $font-size-base * 1.75 !default; //2: 32px
+$h3-font-size:                $font-size-base * 1.5 !default; //1.75: 28px
+$h4-font-size:                $font-size-base * 1.25 !default; //1.5: 24px
+$h5-font-size:                $font-size-base * 1.125 !default; //1.25: 20px
 $h6-font-size:                $font-size-base !default;
 // scss-docs-end font-variables
 

@@ -72,36 +72,71 @@
     <div class="nav-scroller">
       <ul class="nav flex-nowrap justify-content-start justify-content-md-center border-bottom py-3 overflow-x-auto overflow-y-hidden sub-nav">
         <li class="nav-item py-2 px-6 me-7">
-          <a class="nav-link link-dark text-nowrap p-0 active" aria-current="page" href="#">音樂</a>
+          <a class="nav-link link-dark-gray text-nowrap p-0 active" aria-current="page" href="#">音樂</a>
         </li>
         <li class="nav-item py-2 px-6 me-7">
-          <a class="nav-link link-dark text-nowrap p-0" href="#">戲劇</a>
+          <a class="nav-link link-dark-gray text-nowrap p-0" href="#">戲劇</a>
         </li>
         <li class="nav-item py-2 px-6 me-7">
-          <a class="nav-link link-dark text-nowrap p-0" href="#">設計</a>
+          <a class="nav-link link-dark-gray text-nowrap p-0" href="#">設計</a>
         </li>
         <li class="nav-item py-2 px-6 me-7">
-          <a class="nav-link link-dark text-nowrap p-0" href="#">藝術</a>
+          <a class="nav-link link-dark-gray text-nowrap p-0" href="#">藝術</a>
         </li>
         <li class="nav-item py-2 px-6 me-7">
-          <a class="nav-link link-dark text-nowrap p-0" href="#">美食</a>
+          <a class="nav-link link-dark-gray text-nowrap p-0" href="#">美食</a>
         </li>
         <li class="nav-item py-2 px-6 me-7">
-          <a class="nav-link link-dark text-nowrap p-0" href="#">旅遊</a>
+          <a class="nav-link link-dark-gray text-nowrap p-0" href="#">旅遊</a>
         </li>
         <li class="nav-item py-2 px-6 me-7">
-          <a class="nav-link link-dark text-nowrap p-0" href="#">電影</a>
+          <a class="nav-link link-dark-gray text-nowrap p-0" href="#">電影</a>
         </li>
         <li class="nav-item py-2 px-6 me-7">
-          <a class="nav-link link-dark text-nowrap p-0" href="#">親子</a>
+          <a class="nav-link link-dark-gray text-nowrap p-0" href="#">親子</a>
         </li>
         <li class="nav-item py-2 px-6">
-          <a class="nav-link link-dark text-nowrap p-0" href="#">期間限定</a>
+          <a class="nav-link link-dark-gray text-nowrap p-0" href="#">期間限定</a>
         </li>
       </ul>
     </div>
 
     <%- contents %>
+
+    <div class="pt-9 pb-2 py-md-15">
+      <div class="container">
+        <h2 class="h1 fw-bold mb-2 mb-md-9">猜你也喜歡...</h2>
+        <div class="row">
+          <div class="col-md-4 offset-md-1">
+            <div class="card">
+              <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg?raw=true" alt="guess-like-img" class="card-img-top object-fit-cover guess-like-img">
+              <div class="card-body pt-2 pb-6 pt-md-1 pb-md-0">
+                <h4 class="card-title fw-bold mb-1">No.22 線上設計展</h4>
+                <p class="card-text fs-4">$350</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg?raw=true" alt="guess-like-img" class="card-img-top object-fit-cover guess-like-img">
+              <div class="card-body pt-2 pb-6 pt-md-1 pb-md-0">
+                <h4 class="card-title fw-bold mb-1">No.22 線上設計展</h4>
+                <p class="card-text fs-4">$350</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg?raw=true" alt="guess-like-img" class="card-img-top object-fit-cover guess-like-img">
+              <div class="card-body pt-2 pb-6 pt-md-1 pb-md-0">
+                <h4 class="card-title fw-bold mb-1">No.22 線上設計展</h4>
+                <p class="card-text fs-4">$350</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="d-flex flex-column justify-content-end jumbotron bg-cover">
       <div class="container">
@@ -117,11 +152,25 @@
       </div>
     </div>
 
-    <footer class="footer bg-white py-6 py-md-10">
-      <div class="container">
-        <h3 class="d-md-inline-block fw-normal me-md-2">EXHIBINECTION</h3>
-        <p class="d-md-inline-block mb-0">© 2020. All Rights Reserved.</p>
-      </div>
+    <footer class="footer">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-0">
+        <div class="container py-6 py-md-10">
+          <div class="d-md-flex align-items-md-center">
+            <a href="index.html" class="h3 link-dark fw-normal me-md-2">EXHIBINECTION</a>
+            <p class="d-md-inline-block mb-0">© 2020. All Rights Reserved.</p>
+          </div>
+          <div class="collapse navbar-collapse flex-lg-grow-0" id="navbarNavDropdown">
+            <ul class="navbar-nav mt-lg-0">
+              <li class="nav-item me-2">
+                <a class="nav-link link-dark-gray py-0" href="#">Sign in</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark-gray py-0" href="#">Sign up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
