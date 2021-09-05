@@ -10232,6 +10232,10 @@ fieldset:disabled .btn {
   font-size: 1rem !important;
 }
 
+.fs-xl {
+  font-size: calc(1.35rem + 1.2vw) !important;
+}
+
 .fst-italic {
   font-style: italic !important;
 }
@@ -16412,6 +16416,9 @@ fieldset:disabled .btn {
   .fs-3 {
     font-size: 1.5rem !important;
   }
+  .fs-xl {
+    font-size: 2.25rem !important;
+  }
 }
 
 @media print {
@@ -16574,16 +16581,6 @@ p {
   padding-right: 38px;
 }
 
-.guess-like-img {
-  height: 350px;
-}
-
-@media (max-width: 767.98px) {
-  .guess-like-img {
-    height: 345px;
-  }
-}
-
 .jumbotron {
   background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg?raw=true");
   height: 400px;
@@ -16620,11 +16617,64 @@ p {
   height: calc(100% - 80px);
 }
 
+@media (min-width: 768px) {
+  .product {
+    padding-bottom: 52px;
+  }
+}
+
+@media (min-width: 768px) {
+  .product-title {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 768px) {
+  .product-date {
+    height: 100%;
+    font-size: 20px;
+  }
+}
+
 /* width */
 .sub-nav::-webkit-scrollbar {
   display: none;
 }
 
 /* Track */
+.guess-like-swiper .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.guess-like-swiper .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 350px;
+}
+
+@media (max-width: 767.98px) {
+  .guess-like-swiper .swiper-slide {
+    width: 345px;
+  }
+}
+
+.guess-like-swiper .swiper-slide img {
+  width: 100%;
+  height: 350px;
+}
+
+@media (max-width: 767.98px) {
+  .guess-like-swiper .swiper-slide img {
+    height: 345px;
+  }
+}
 
 /*# sourceMappingURL=all.css.map */
