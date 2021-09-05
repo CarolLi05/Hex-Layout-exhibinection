@@ -1,0 +1,25 @@
+
+
+
+.guess-like-swiper{
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        @include media-breakpoint-down(md) {
+            width: 345px;
+        }
+        img{
+            width: 100%;
+            height: 350px;
+            @include media-breakpoint-down(md) {
+                height: 345px;
+            }
+        }
+    }
+}

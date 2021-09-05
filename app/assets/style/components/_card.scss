@@ -19,3 +19,22 @@
     right: 24px;
     height: calc(100% - 80px);
 }
+
+.product{
+    @include media-breakpoint-up(md) {
+        padding-bottom: 52px;
+    }
+}
+
+.product-title{
+    @include media-breakpoint-up(md) {
+        font-size: 36px;
+    }
+}
+
+.product-date{
+    @include media-breakpoint-up(md) {
+        height: 100%;
+        font-size: 20px;
+    }
+}
