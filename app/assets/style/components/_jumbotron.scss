@@ -4,6 +4,12 @@
     height: 400px;
 }
 
+.jumbotron-text{
+    @include media-breakpoint-down(md) {
+        margin-bottom: 22px;
+    }
+}
+
 .cta-action{
     margin-bottom: 36px;
     &-btn{

@@ -1,0 +1,7 @@
+
+.guess-like-img{
+    height: 350px;
+    @include media-breakpoint-down(md) {
+        height: 345px;
+    }
+}
